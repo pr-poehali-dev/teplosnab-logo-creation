@@ -39,19 +39,19 @@ const Index = () => {
                         </feMerge>
                       </filter>
                     </defs>
-                    <path d="M50 5 L90 50 L50 95 L10 50 Z" fill="url(#grad1)" />
-                    <path d="M50 5 L90 50 L50 95 L10 50 Z" fill="none" stroke="url(#heatGlow)" strokeWidth="3" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="45" fill="url(#grad1)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#heatGlow)" strokeWidth="3" opacity="0.6"/>
                     <g filter="url(#glow)">
                       <path d="M50 20 L50 45" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
-                      <path d="M50 50 L70 50" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
-                      <path d="M50 50 L30 50" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
+                      <path d="M50 50 L65 65" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
+                      <path d="M50 50 L35 65" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
                       <path d="M50 50 L50 75" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
                       <circle cx="50" cy="50" r="8" fill="url(#heatGlow)"/>
                       <circle cx="50" cy="50" r="12" fill="none" stroke="url(#heatGlow)" strokeWidth="1.5" opacity="0.5"/>
                       <circle cx="50" cy="50" r="16" fill="none" stroke="url(#heatGlow)" strokeWidth="1" opacity="0.3"/>
                       <circle cx="50" cy="20" r="4" fill="url(#heatGlow)"/>
-                      <circle cx="70" cy="50" r="4" fill="url(#heatGlow)"/>
-                      <circle cx="30" cy="50" r="4" fill="url(#heatGlow)"/>
+                      <circle cx="65" cy="65" r="4" fill="url(#heatGlow)"/>
+                      <circle cx="35" cy="65" r="4" fill="url(#heatGlow)"/>
                       <circle cx="50" cy="75" r="4" fill="url(#heatGlow)"/>
                     </g>
                   </svg>
@@ -94,18 +94,18 @@ const Index = () => {
                         </feMerge>
                       </filter>
                     </defs>
-                    <path d="M50 8 L88 50 L50 92 L12 50 Z" fill="url(#grad2)" />
-                    <path d="M50 8 L88 50 L50 92 L12 50 Z" fill="none" stroke="url(#heatGlow2)" strokeWidth="2.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="42" fill="url(#grad2)" />
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="url(#heatGlow2)" strokeWidth="2.5" opacity="0.6"/>
                     <g filter="url(#glow2)">
                       <path d="M50 22 L50 42" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
-                      <path d="M50 50 L68 50" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
-                      <path d="M50 50 L32 50" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
+                      <path d="M50 50 L63 63" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
+                      <path d="M50 50 L37 63" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
                       <path d="M50 50 L50 72" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
                       <circle cx="50" cy="50" r="7" fill="url(#heatGlow2)"/>
                       <circle cx="50" cy="50" r="11" fill="none" stroke="url(#heatGlow2)" strokeWidth="1.2" opacity="0.5"/>
                       <circle cx="50" cy="22" r="3.5" fill="url(#heatGlow2)"/>
-                      <circle cx="68" cy="50" r="3.5" fill="url(#heatGlow2)"/>
-                      <circle cx="32" cy="50" r="3.5" fill="url(#heatGlow2)"/>
+                      <circle cx="63" cy="63" r="3.5" fill="url(#heatGlow2)"/>
+                      <circle cx="37" cy="63" r="3.5" fill="url(#heatGlow2)"/>
                       <circle cx="50" cy="72" r="3.5" fill="url(#heatGlow2)"/>
                     </g>
                   </svg>
@@ -146,18 +146,18 @@ const Index = () => {
                         </feMerge>
                       </filter>
                     </defs>
-                    <path d="M50 10 L86 50 L50 90 L14 50 Z" fill="url(#grad3)" />
-                    <path d="M50 10 L86 50 L50 90 L14 50 Z" fill="none" stroke="url(#heatGlow3)" strokeWidth="2" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="40" fill="url(#grad3)" />
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="url(#heatGlow3)" strokeWidth="2" opacity="0.6"/>
                     <g filter="url(#glow3)">
                       <path d="M50 24 L50 43" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
-                      <path d="M50 50 L66 50" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
-                      <path d="M50 50 L34 50" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
+                      <path d="M50 50 L61 61" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
+                      <path d="M50 50 L39 61" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
                       <path d="M50 50 L50 70" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
                       <circle cx="50" cy="50" r="6" fill="url(#heatGlow3)"/>
                       <circle cx="50" cy="50" r="10" fill="none" stroke="url(#heatGlow3)" strokeWidth="1" opacity="0.5"/>
                       <circle cx="50" cy="24" r="3" fill="url(#heatGlow3)"/>
-                      <circle cx="66" cy="50" r="3" fill="url(#heatGlow3)"/>
-                      <circle cx="34" cy="50" r="3" fill="url(#heatGlow3)"/>
+                      <circle cx="61" cy="61" r="3" fill="url(#heatGlow3)"/>
+                      <circle cx="39" cy="61" r="3" fill="url(#heatGlow3)"/>
                       <circle cx="50" cy="70" r="3" fill="url(#heatGlow3)"/>
                     </g>
                   </svg>
@@ -189,19 +189,19 @@ const Index = () => {
                       </feMerge>
                     </filter>
                   </defs>
-                  <path d="M50 5 L90 50 L50 95 L10 50 Z" fill="url(#gradBW)" />
-                  <path d="M50 5 L90 50 L50 95 L10 50 Z" fill="none" stroke="#6B7280" strokeWidth="3" opacity="0.6"/>
+                  <circle cx="50" cy="50" r="45" fill="url(#gradBW)" />
+                  <circle cx="50" cy="50" r="45" fill="none" stroke="#6B7280" strokeWidth="3" opacity="0.6"/>
                   <g filter="url(#glowBW)">
                     <path d="M50 20 L50 45" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
-                    <path d="M50 50 L70 50" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
-                    <path d="M50 50 L30 50" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
+                    <path d="M50 50 L65 65" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
+                    <path d="M50 50 L35 65" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
                     <path d="M50 50 L50 75" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
                     <circle cx="50" cy="50" r="8" fill="#9CA3AF"/>
                     <circle cx="50" cy="50" r="12" fill="none" stroke="#9CA3AF" strokeWidth="1.5" opacity="0.5"/>
                     <circle cx="50" cy="50" r="16" fill="none" stroke="#9CA3AF" strokeWidth="1" opacity="0.3"/>
                     <circle cx="50" cy="20" r="4" fill="#9CA3AF"/>
-                    <circle cx="70" cy="50" r="4" fill="#9CA3AF"/>
-                    <circle cx="30" cy="50" r="4" fill="#9CA3AF"/>
+                    <circle cx="65" cy="65" r="4" fill="#9CA3AF"/>
+                    <circle cx="35" cy="65" r="4" fill="#9CA3AF"/>
                     <circle cx="50" cy="75" r="4" fill="#9CA3AF"/>
                   </g>
                 </svg>
