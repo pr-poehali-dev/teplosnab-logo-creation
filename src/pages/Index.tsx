@@ -20,24 +20,40 @@ const Index = () => {
             <div className="flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-100 p-12 rounded-lg">
               <div className="flex items-center gap-6">
                 <div className="relative w-24 h-24">
-                  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-xl">
+                  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-2xl">
                     <defs>
                       <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" style={{ stopColor: '#1A1F2C', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#334155', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#0F172A', stopOpacity: 1 }} />
                       </linearGradient>
-                      <linearGradient id="flame" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <linearGradient id="heatGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" style={{ stopColor: '#F97316', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#EA580C', stopOpacity: 1 }} />
+                        <stop offset="50%" style={{ stopColor: '#FB923C', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#F97316', stopOpacity: 1 }} />
                       </linearGradient>
+                      <filter id="glow">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                        <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
                     </defs>
-                    <path d="M50 5 L85 30 L85 70 L50 95 L15 70 L15 30 Z" fill="url(#grad1)" stroke="#F97316" strokeWidth="2"/>
-                    <circle cx="50" cy="55" r="18" fill="url(#flame)" opacity="0.9"/>
-                    <path d="M50 30 Q45 40 50 50 Q55 40 50 30" fill="#FFF" opacity="0.9"/>
-                    <path d="M45 50 Q42 57 45 63 Q48 57 45 50" fill="#FFF" opacity="0.8"/>
-                    <path d="M55 50 Q52 57 55 63 Q58 57 55 50" fill="#FFF" opacity="0.8"/>
-                    <rect x="47" y="70" width="6" height="15" fill="#64748B" rx="1"/>
-                    <rect x="35" y="78" width="30" height="3" fill="#64748B" rx="1"/>
+                    <circle cx="50" cy="50" r="45" fill="url(#grad1)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#heatGlow)" strokeWidth="3" opacity="0.6"/>
+                    <g filter="url(#glow)">
+                      <path d="M50 20 L50 45" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
+                      <path d="M50 50 L65 65" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
+                      <path d="M50 50 L35 65" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
+                      <path d="M50 50 L50 75" stroke="url(#heatGlow)" strokeWidth="4" strokeLinecap="round"/>
+                      <circle cx="50" cy="50" r="8" fill="url(#heatGlow)"/>
+                      <circle cx="50" cy="50" r="12" fill="none" stroke="url(#heatGlow)" strokeWidth="1.5" opacity="0.5"/>
+                      <circle cx="50" cy="50" r="16" fill="none" stroke="url(#heatGlow)" strokeWidth="1" opacity="0.3"/>
+                      <circle cx="50" cy="20" r="4" fill="url(#heatGlow)"/>
+                      <circle cx="65" cy="65" r="4" fill="url(#heatGlow)"/>
+                      <circle cx="35" cy="65" r="4" fill="url(#heatGlow)"/>
+                      <circle cx="50" cy="75" r="4" fill="url(#heatGlow)"/>
+                    </g>
                   </svg>
                 </div>
                 <div>
@@ -59,24 +75,39 @@ const Index = () => {
               </h2>
               <div className="flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-100 p-12 rounded-lg">
                 <div className="flex flex-col items-center gap-4">
-                  <svg viewBox="0 0 100 100" className="w-20 h-20 drop-shadow-lg">
+                  <svg viewBox="0 0 100 100" className="w-20 h-20 drop-shadow-xl">
                     <defs>
                       <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" style={{ stopColor: '#1A1F2C', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#334155', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#0F172A', stopOpacity: 1 }} />
                       </linearGradient>
-                      <linearGradient id="flame2" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <linearGradient id="heatGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" style={{ stopColor: '#F97316', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#EA580C', stopOpacity: 1 }} />
+                        <stop offset="50%" style={{ stopColor: '#FB923C', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#F97316', stopOpacity: 1 }} />
                       </linearGradient>
+                      <filter id="glow2">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                        <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
                     </defs>
-                    <path d="M50 5 L85 30 L85 70 L50 95 L15 70 L15 30 Z" fill="url(#grad2)" stroke="#F97316" strokeWidth="2"/>
-                    <circle cx="50" cy="55" r="16" fill="url(#flame2)" opacity="0.9"/>
-                    <path d="M50 32 Q46 40 50 48 Q54 40 50 32" fill="#FFF" opacity="0.9"/>
-                    <path d="M46 48 Q44 54 46 60 Q49 54 46 48" fill="#FFF" opacity="0.8"/>
-                    <path d="M54 48 Q52 54 54 60 Q57 54 54 48" fill="#FFF" opacity="0.8"/>
-                    <rect x="47" y="68" width="6" height="13" fill="#64748B" rx="1"/>
-                    <rect x="37" y="75" width="26" height="3" fill="#64748B" rx="1"/>
+                    <circle cx="50" cy="50" r="42" fill="url(#grad2)" />
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="url(#heatGlow2)" strokeWidth="2.5" opacity="0.6"/>
+                    <g filter="url(#glow2)">
+                      <path d="M50 22 L50 42" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
+                      <path d="M50 50 L63 63" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
+                      <path d="M50 50 L37 63" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
+                      <path d="M50 50 L50 72" stroke="url(#heatGlow2)" strokeWidth="3.5" strokeLinecap="round"/>
+                      <circle cx="50" cy="50" r="7" fill="url(#heatGlow2)"/>
+                      <circle cx="50" cy="50" r="11" fill="none" stroke="url(#heatGlow2)" strokeWidth="1.2" opacity="0.5"/>
+                      <circle cx="50" cy="22" r="3.5" fill="url(#heatGlow2)"/>
+                      <circle cx="63" cy="63" r="3.5" fill="url(#heatGlow2)"/>
+                      <circle cx="37" cy="63" r="3.5" fill="url(#heatGlow2)"/>
+                      <circle cx="50" cy="72" r="3.5" fill="url(#heatGlow2)"/>
+                    </g>
                   </svg>
                   <div className="text-center">
                     <div className="text-3xl font-black text-primary tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -100,20 +131,35 @@ const Index = () => {
                     <defs>
                       <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" style={{ stopColor: '#1A1F2C', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#334155', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#0F172A', stopOpacity: 1 }} />
                       </linearGradient>
-                      <linearGradient id="flame3" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <linearGradient id="heatGlow3" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" style={{ stopColor: '#F97316', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#EA580C', stopOpacity: 1 }} />
+                        <stop offset="50%" style={{ stopColor: '#FB923C', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#F97316', stopOpacity: 1 }} />
                       </linearGradient>
+                      <filter id="glow3">
+                        <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+                        <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
                     </defs>
-                    <path d="M50 5 L85 30 L85 70 L50 95 L15 70 L15 30 Z" fill="url(#grad3)" stroke="#F97316" strokeWidth="2"/>
-                    <circle cx="50" cy="55" r="14" fill="url(#flame3)" opacity="0.9"/>
-                    <path d="M50 34 Q47 40 50 46 Q53 40 50 34" fill="#FFF" opacity="0.9"/>
-                    <path d="M47 46 Q45 51 47 57 Q49 51 47 46" fill="#FFF" opacity="0.8"/>
-                    <path d="M53 46 Q51 51 53 57 Q55 51 53 46" fill="#FFF" opacity="0.8"/>
-                    <rect x="47" y="66" width="6" height="11" fill="#64748B" rx="1"/>
-                    <rect x="39" y="72" width="22" height="2.5" fill="#64748B" rx="1"/>
+                    <circle cx="50" cy="50" r="40" fill="url(#grad3)" />
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="url(#heatGlow3)" strokeWidth="2" opacity="0.6"/>
+                    <g filter="url(#glow3)">
+                      <path d="M50 24 L50 43" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
+                      <path d="M50 50 L61 61" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
+                      <path d="M50 50 L39 61" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
+                      <path d="M50 50 L50 70" stroke="url(#heatGlow3)" strokeWidth="3" strokeLinecap="round"/>
+                      <circle cx="50" cy="50" r="6" fill="url(#heatGlow3)"/>
+                      <circle cx="50" cy="50" r="10" fill="none" stroke="url(#heatGlow3)" strokeWidth="1" opacity="0.5"/>
+                      <circle cx="50" cy="24" r="3" fill="url(#heatGlow3)"/>
+                      <circle cx="61" cy="61" r="3" fill="url(#heatGlow3)"/>
+                      <circle cx="39" cy="61" r="3" fill="url(#heatGlow3)"/>
+                      <circle cx="50" cy="70" r="3" fill="url(#heatGlow3)"/>
+                    </g>
                   </svg>
                   <div className="text-2xl font-black text-primary tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     ТЕПЛОСНАБ
@@ -129,14 +175,35 @@ const Index = () => {
             </h2>
             <div className="flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-100 p-12 rounded-lg">
               <div className="flex items-center gap-6">
-                <svg viewBox="0 0 100 100" className="w-24 h-24 drop-shadow-xl">
-                  <path d="M50 5 L85 30 L85 70 L50 95 L15 70 L15 30 Z" fill="#000" stroke="#666" strokeWidth="2"/>
-                  <circle cx="50" cy="55" r="18" fill="#4B5563" opacity="0.9"/>
-                  <path d="M50 30 Q45 40 50 50 Q55 40 50 30" fill="#FFF" opacity="0.9"/>
-                  <path d="M45 50 Q42 57 45 63 Q48 57 45 50" fill="#FFF" opacity="0.8"/>
-                  <path d="M55 50 Q52 57 55 63 Q58 57 55 50" fill="#FFF" opacity="0.8"/>
-                  <rect x="47" y="70" width="6" height="15" fill="#6B7280" rx="1"/>
-                  <rect x="35" y="78" width="30" height="3" fill="#6B7280" rx="1"/>
+                <svg viewBox="0 0 100 100" className="w-24 h-24 drop-shadow-2xl">
+                  <defs>
+                    <linearGradient id="gradBW" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{ stopColor: '#000', stopOpacity: 1 }} />
+                      <stop offset="100%" style={{ stopColor: '#1F2937', stopOpacity: 1 }} />
+                    </linearGradient>
+                    <filter id="glowBW">
+                      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                      <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  <circle cx="50" cy="50" r="45" fill="url(#gradBW)" />
+                  <circle cx="50" cy="50" r="45" fill="none" stroke="#6B7280" strokeWidth="3" opacity="0.6"/>
+                  <g filter="url(#glowBW)">
+                    <path d="M50 20 L50 45" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
+                    <path d="M50 50 L65 65" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
+                    <path d="M50 50 L35 65" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
+                    <path d="M50 50 L50 75" stroke="#9CA3AF" strokeWidth="4" strokeLinecap="round"/>
+                    <circle cx="50" cy="50" r="8" fill="#9CA3AF"/>
+                    <circle cx="50" cy="50" r="12" fill="none" stroke="#9CA3AF" strokeWidth="1.5" opacity="0.5"/>
+                    <circle cx="50" cy="50" r="16" fill="none" stroke="#9CA3AF" strokeWidth="1" opacity="0.3"/>
+                    <circle cx="50" cy="20" r="4" fill="#9CA3AF"/>
+                    <circle cx="65" cy="65" r="4" fill="#9CA3AF"/>
+                    <circle cx="35" cy="65" r="4" fill="#9CA3AF"/>
+                    <circle cx="50" cy="75" r="4" fill="#9CA3AF"/>
+                  </g>
                 </svg>
                 <div>
                   <div className="text-4xl font-black text-black tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
