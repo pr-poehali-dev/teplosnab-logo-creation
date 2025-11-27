@@ -20,12 +20,19 @@ const Index = () => {
             <div className="flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-100 p-12 rounded-lg">
               <div className="flex items-center gap-6">
                 <div className="relative w-24 h-24">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-slate-800 rounded-full"></div>
-                  <div className="absolute inset-3 bg-secondary rounded-full"></div>
-                  <div className="absolute inset-6 bg-gradient-to-br from-primary to-slate-800 rounded-full"></div>
-                  <div className="absolute top-1/2 left-1/2 w-16 h-1 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                  <div className="absolute top-1/2 left-1/2 w-1 h-16 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                  <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-secondary rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary via-slate-700 to-slate-900 rounded-2xl transform rotate-45 shadow-xl"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative w-16 h-16">
+                      <div className="absolute inset-0 bg-secondary rounded-full animate-pulse"></div>
+                      <div className="absolute inset-2 bg-gradient-to-br from-orange-400 to-secondary rounded-full"></div>
+                      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-white/80"></div>
+                      <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-white/80"></div>
+                      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full"></div>
+                      <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-white rounded-full"></div>
+                      <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-white rounded-full"></div>
+                      <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-white rounded-full"></div>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <div className="text-4xl font-black text-primary tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -47,12 +54,19 @@ const Index = () => {
               <div className="flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-100 p-12 rounded-lg">
                 <div className="flex flex-col items-center gap-4">
                   <div className="relative w-20 h-20">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary to-slate-800 rounded-full"></div>
-                    <div className="absolute inset-2.5 bg-secondary rounded-full"></div>
-                    <div className="absolute inset-5 bg-gradient-to-br from-primary to-slate-800 rounded-full"></div>
-                    <div className="absolute top-1/2 left-1/2 w-12 h-0.5 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                    <div className="absolute top-1/2 left-1/2 w-0.5 h-12 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                    <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-secondary rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary via-slate-700 to-slate-900 rounded-2xl transform rotate-45 shadow-xl"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="relative w-14 h-14">
+                        <div className="absolute inset-0 bg-secondary rounded-full"></div>
+                        <div className="absolute inset-1.5 bg-gradient-to-br from-orange-400 to-secondary rounded-full"></div>
+                        <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-white/80"></div>
+                        <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-white/80"></div>
+                        <div className="absolute top-1/4 left-1/4 w-1.5 h-1.5 bg-white rounded-full"></div>
+                        <div className="absolute top-1/4 right-1/4 w-1.5 h-1.5 bg-white rounded-full"></div>
+                        <div className="absolute bottom-1/4 left-1/4 w-1.5 h-1.5 bg-white rounded-full"></div>
+                        <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-white rounded-full"></div>
+                      </div>
+                    </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-black text-primary tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -73,12 +87,15 @@ const Index = () => {
               <div className="flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-100 p-12 rounded-lg">
                 <div className="flex items-center gap-3">
                   <div className="relative w-16 h-16">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary to-slate-800 rounded-full"></div>
-                    <div className="absolute inset-2 bg-secondary rounded-full"></div>
-                    <div className="absolute inset-4 bg-gradient-to-br from-primary to-slate-800 rounded-full"></div>
-                    <div className="absolute top-1/2 left-1/2 w-10 h-0.5 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                    <div className="absolute top-1/2 left-1/2 w-0.5 h-10 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                    <div className="absolute top-1/2 left-1/2 w-2.5 h-2.5 bg-secondary rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary via-slate-700 to-slate-900 rounded-2xl transform rotate-45 shadow-lg"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="relative w-11 h-11">
+                        <div className="absolute inset-0 bg-secondary rounded-full"></div>
+                        <div className="absolute inset-1 bg-gradient-to-br from-orange-400 to-secondary rounded-full"></div>
+                        <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-white/80"></div>
+                        <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-white/80"></div>
+                      </div>
+                    </div>
                   </div>
                   <div className="text-2xl font-black text-primary tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     ТЕПЛОСНАБ
@@ -95,12 +112,19 @@ const Index = () => {
             <div className="flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-100 p-12 rounded-lg">
               <div className="flex items-center gap-6">
                 <div className="relative w-24 h-24">
-                  <div className="absolute inset-0 bg-black rounded-full"></div>
-                  <div className="absolute inset-3 bg-gray-400 rounded-full"></div>
-                  <div className="absolute inset-6 bg-black rounded-full"></div>
-                  <div className="absolute top-1/2 left-1/2 w-16 h-1 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                  <div className="absolute top-1/2 left-1/2 w-1 h-16 bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
-                  <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-gray-400 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                  <div className="absolute inset-0 bg-black rounded-2xl transform rotate-45 shadow-xl"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative w-16 h-16">
+                      <div className="absolute inset-0 bg-gray-300 rounded-full"></div>
+                      <div className="absolute inset-2 bg-gray-500 rounded-full"></div>
+                      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-white"></div>
+                      <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-white"></div>
+                      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full"></div>
+                      <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-white rounded-full"></div>
+                      <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-white rounded-full"></div>
+                      <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-white rounded-full"></div>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <div className="text-4xl font-black text-black tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
